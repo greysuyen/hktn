@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    background-color: #071c2b;
+}
+
+h1 {
+    margin: 10px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.divv {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0px;
+}
+
+.box {
+    margin: .5px;
+    width: 75px;
+    height: 75px;
+}
+
+#tog {
+    margin: 10px 0px;
+}
+
+
+.allimg {
+    width: 60px;
+    position: relative;
+    bottom: 0;
+}
+
+.allpawn {
+    transform: scale(.7);
+}
+
+.authcont {
+    width: 100vw;
+}
+
+.author {
+    float: right;
+    margin-right: 50px;
+
+}
+
+
+@media (max-width:650px){
+
+    #tog {
+        margin-bottom: 70px;
+
+    }
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .allimg {
+        width: 7vw;
+    }
+}
+#tog {
+    color: goldenrod;
+}
+.divv {
+    background-color: gray;
+}
+
+#title-1 {
+    color: goldenrod;
+}
+#home{
+    font-size: 30px;
+    position: absolute;
+    top: 1.5cm;
+    border: 10px;
+    left: 10px;
+    color: goldenrod;
+    font-family: Arial, sans-serif;
+}
+#menu {
+    font-size: 30px;
+    position: absolute;
+    top: 0.3cm;
+    border: 10px;
+    left: 10px;
+    color: goldenrod;
+    font-family: Arial, sans-serif;
+}
+#home:hover, #menu:hover {
+    font-size: 32px;
+    transition: linear .3s;
+    color: #0e6eb3;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}

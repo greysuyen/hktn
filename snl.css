@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: goldenrod;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #071c2b;
+
+  }
+  #img {
+    border-radius: 10px;
+    box-shadow: 
+    0 0 40px rgb(255, 238, 238), 
+    inset 0 0 30px rgba(19, 1, 14, 0.459);
+  }
+  .cont {
+    display: grid;
+    width: 600px;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 0 ;
+    
+  }
+  
+  .cont div {
+    width: 60px;
+    height: 63px;
+    border: 0.2px hidden black;
+  }
+  
+  #p1,
+  #p2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(236, 82, 82);
+    position: relative;
+    border: 2px solid #071c2b;
+  
+    /* position: absolute; */
+  }
+  
+  #p1 {
+    position: relative;
+    border: 2px solid #071c2b;
+    background-image: url(abog.jpg);
+    background-repeat: round;
+    top: 0px;
+    transition: all linear 0.5s;
+    /* top: 0; */
+    left: -62px;
+    z-index: 2;
+  }
+  
+  #p2 {
+    border: 2px solid #071c2b;
+    z-index: 2;
+    position: relative;
+    top: -55px;
+    left: -62px;
+    transition: all linear 0.5s;
+    background-image: url(ehnzo.jpg);
+    background-repeat: round;
+}
+  
+  img {
+    position: relative;
+    top: -615px;
+    left: 8px;
+    /* z-index: -1; */
+    margin: 0;
+    width: 615px;
+    height: 615px;
+  }
+  #diceCont {
+    box-shadow: 
+        0 0 40px rgba(207, 208, 216, 0.5), 
+        inset 0 0 30px rgba(197, 154, 186, 0.459);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    font-size: 2rem;
+    z-index: 99;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #072e4b;
+    color: goldenrod;
+    border: 2px rgb(83, 80, 63) solid;
+  }
+  #diceBtn {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 440px;
+    left: 180px;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: brown;
+    color: goldenrod;
+    border: solid rgb(83, 80, 63) 2px;
+    font-size: 25px;
+    padding: 5px;
+    color: goldenrod;
+    background-color: #193d57;
+    
+  }
+ 
+  
+  @media (max-width: 1250px) {
+    
+    #diceCont {
+      display: flex;
+      place-items: none;
+      top: 92vh;
+      left: 36vw;
+      border: 2px solid red;
+    }
+    #diceBtn {
+      width: 200px;
+      margin-left: 20px;
+    }
+  }
+  @media (max-width: 1250px) {
+    
+    #diceCont {
+      display: flex;
+      place-items: none;
+      top: 99vh;
+      left: 10vw;
+      /* border: 2px solid red; */
+    }
+    #diceBtn {
+      width: 200px;
+      margin-left: 20px;
+    }
+  }/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body */
+body {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #071c2b;
+    position: relative;
+}
+
+#menu {
+    border: 10px;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: goldenrod;
+    font-family: Arial, sans-serif;
+}
+#home {
+    font-size: 30px;
+    position: absolute;
+    top: 1.5cm;
+    border: 10px;
+    left: 10px;
+    color: goldenrod;
+    font-family: Arial, sans-serif;
+}
+.title h1,
+.title h2 {
+    margin: 5px 0;
+}
+
+/* Rest of your existing styles */
+.cont {
+    display: grid;
+    width: 600px;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+} 
+#menu:hover, #home:hover {
+    color: #0e6eb3;
+    border-radius: 10px;
+    transition: linear 0.3s;
+    border: 1px hidden rgb(63, 23, 23);
+    background-color: rgb(88, 91, 102);
+    padding: 5px;
+}
+
+.scoreboard {
+  background-color: rgb(30, 32, 37);
+  box-shadow: 
+  0 0 20px rgba(207, 208, 216, 0.5), 
+  inset 0 0 5px rgba(89, 116, 235, 0.459);
+  padding: 9px;
+  border-radius: 20px;
+  border: 1px rgba(8, 26, 9, 0.719) solid;
+  font-size: 30px;
+  position: absolute;
+  top: 1cm;
+  left: 30cm;
+  color: goldenrod;
+  font-family: Arial, sans-serif;
+}
+#board {
+  font-size: 40px;
+  color: goldenrod;
+}
+#diceBtn:hover {
+  background-color: rgb(84, 88, 88);
+  transition: linear .2s;
+}
+#diceBtn:active {
+  background-color: rgb(255, 41, 3);
+  font-size: 26px;
+  color: black;
+}

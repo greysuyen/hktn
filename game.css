@@ -1,0 +1,151 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home:hover {
+    text-shadow: 1px 2px 3px rgb(14, 159, 226);
+    color:  #18537e;
+    transition: linear .3s;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background:#071c2b;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Fixes the image position */
+    background-position: center; /* Centers the image */
+    color: #ededed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.header {
+    background-color: rgb(22, 20, 20);
+    font-family: sans-serif;
+    color: goldenrod;
+    text-align: center;
+    width: 100%;
+    border-bottom: rgba(45, 76, 122, 0.822) 1.6px solid;
+}
+
+.header h1 {
+    color: goldenrod;
+    text-decoration: none;
+    margin: 0;
+    font-size: 2rem;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: goldenrod;
+    text-align: center;
+}
+
+.content {
+    
+    color: goldenrod;
+    cursor: pointer;
+    padding: 40px;
+    border: 1px solid rgb(54, 82, 107);
+    border-radius: 10px;
+    position: absolute;
+    left: 30%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Correct the alignment */
+    text-align: center;
+    box-shadow: 
+        0 0 50px rgba(81, 108, 131, 0.5), 
+        inset 0 0 50px rgba(58, 17, 17, 0.459);
+}
+
+#chess:hover, #dice:hover, #timer:hover, #snl:hover {
+    padding: 5px;
+    margin: 10px; 
+    background-color: #071c2b;
+    transition: linear .3s;
+    font-size: 45px;
+    color: rgb(103, 135, 161);
+    border: 1px hidden;
+}
+
+#chess, #dice, #timer, #snl {
+    border: 1px gray;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 10px;
+    transition: linear .2s;
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 40px;
+    
+}
+a {
+    text-decoration: none;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+#games {
+    font-size: 35px;
+}
+
+#image-container {
+    position: fixed; /* Fix the container relative to the viewport */
+    right: 15%; /* Place it 5% from the right edge */
+    top: 38%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust to center precisely */
+    display: none; /* Initially hidden */
+    text-align: center; /* Center the content inside */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+#image-container img {
+    width: 15cm; /* Adjust image size */
+    height: 71vh; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    background: #071c2b; /* Optional: ensure background isn't visible */
+}
+/* Right-middle decorative background */
+    #background-right {
+        position: fixed; /* Fix the position relative to the viewport */
+        right: 20%; /* Place it 5% from the right edge */
+        top: 42%; /* Center it vertically */
+        transform: translateY(-50%); /* Adjust for precise centering */
+        width: 30vw; /* Adjust width to a percentage of the viewport */
+        height: 62vh; /* Adjust height to a percentage of the viewport */
+        background-image: url('playmore.png'); /* Replace with your image path */
+        background-size: cover; /* Ensure the image covers the container */
+        background-position: center; /* Center the image within the container */
+        background-repeat: no-repeat; /* Prevent tiling */
+        opacity: 0; /* Initially invisible */
+        animation: fadeIn 1.5s ease-in-out forwards; /* Smooth fade-in effect */
+        z-index: 1; /* Place it below content but above the main background */
+    }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.95); /* Slightly zoomed out */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) scale(1); /* Fully visible */
+    }
+}
+
